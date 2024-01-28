@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+section:hover {
+    transform: scale(1.05); /* Pop-out effect */
+    background-color: rgba(255, 255, 255, 0.1); /* Change background color on hover */
+}
+
+#about,
+#experience,
+#projects {
+    color: #fff;
+    padding: 40px 0;
+    transition: transform 0.3s ease-in-out;
+    border-bottom: 1px solid #555; /* Border color between sections */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box-shadow for better separation */
+}
+
+#about:hover,
+#experience:hover,
+#projects:hover {
+    transform: scale(1.1);
+}
+
+#about h2 {
+    color: #fff;
+}
+
+#about p {
+    color: #ddd; /* Adjust the text color as needed */
+    line-height: 1.6;
+}
+
+header {
+   
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1,
+h2,
+h3,
+p {
+    color: #fff;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s, color 0.3s, border-color 0.3s;
+}
+
+a:hover {
+    background: linear-gradient(45deg, #555, #777); /* Gradient background on hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transform: scale(1.1) rotate(5deg); /* Rotate the element on hover */
+    color: #0aecd2; /* Change text color on hover */
+    border-color: #0aecd2; /* Change border color on hover */
+}
+
+
+.profile-picture {
+    width: 70%;
+    max-width: 150px; /* Set a maximum width if needed */
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%; /* Creates a circular border */
+    margin-right: 20px; /* Adjust the spacing as needed */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Ensures the image itself is also circular */
+}
+
+/* Add this style to center the text vertically with the picture */
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Add this style to the container to create some space around the picture and text */
+#about.container {
+    padding: 40px 0;
+    position: relative;
+}
+
+#footer {
+    margin-top: 20px; /* Add a bit more space above the footer */
+}
